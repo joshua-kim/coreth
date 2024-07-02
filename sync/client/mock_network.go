@@ -8,6 +8,7 @@ import (
 	"errors"
 
 	"github.com/ava-labs/avalanchego/ids"
+
 	"github.com/ava-labs/coreth/peer"
 
 	"github.com/ava-labs/avalanchego/version"
@@ -75,10 +76,6 @@ func (t *mockNetwork) processMock(request []byte) ([]byte, error) {
 }
 
 func (t *mockNetwork) Gossip([]byte) error {
-	panic("not implemented") // we don't care about this function for this test
-}
-
-func (t *mockNetwork) SendCrossChainRequest(ctx context.Context, chainID ids.ID, request []byte) ([]byte, error) {
 	panic("not implemented") // we don't care about this function for this test
 }
 
